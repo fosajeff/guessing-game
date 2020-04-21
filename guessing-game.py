@@ -77,6 +77,7 @@ def guess_my_secret_number(username):
         except ValueError:
             print("Wrong input,try again")
         else:
+            if diff_level > 3 or diff_level < 1: print("Wrong input"); continue
             if diff_level == 1:
                 print(easy_difficulty(no_of_guesses.get("easy")))
             elif diff_level == 2:
